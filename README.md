@@ -12,6 +12,33 @@ so, yes, this should be safe.
 
 > Note: they've changed their certificate in version 6.30.8, but the above still applies.
 
+## Why are there so many versions?
+
+because i've downloaded them all, before drawboard decided to remove the old versions from their website.
+
+## Why do the bundles get so big after 6.30.8?
+
+this one is actually quite interesting!
+
+it's coperate greed. they want to make more money, so they moved more and more tools to their paid "Pro Upgrade" plan.
+But paid features require promotion (in the form of a preview), so they started including those in **every** version of drawboard from that version on.
+and they're not just a few megabytes, they're **hundreds of megabytes**. And they're getting bigger and bigger with every update.
+
+From this, we can also see what features they wish to promote the most (sorting by file size):
+
+1. Cloud Storage (34 MB; was partially free before)
+2. Tool Slots (23 MB; free before)
+3. Multiple Windows (23 MB; actually new, i think)
+4. Signatures (18 MB; free before)
+5. Pressure Sensitive Inking (13 MB; free before)
+
+In the latest version i've downloaded, the previews for the "Pro Upgrade" add about 180MB to every architecture (x86, x64, arm), so that's 540MB of bloat for every version.
+
+If you don't believe me, just download and unpack the latest version (eg. with 7zip) and look under `/Assets/Brand/ProUpgrade/` for yourself.
+
+
+Also, they've somehow managed to completely destroy the quality of those (added) previews. Somehow they managed to have compression artifacts __and__ increase the file size at the same time. I don't know how they did it, but it's kinda impressive.
+
 # Why?
 
 because with the latest updates, drawboard now sucks :(

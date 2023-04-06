@@ -1,0 +1,1 @@
+@(Get-ChildItem . -Filter "*.msixbundle" | ForEach-Object { $sig = Get-AuthenticodeSignature $_; [PSCustomObject]@{ File= $_.BaseName ;Hash = (Get-FileHash $_).Hash; Signature_Thumbprint = $sig.SignerCertificate.Thumbprint; Signature_Valid = $sig.Status } }) | ConvertTo-Json | Out-File -FilePath .\info.json
